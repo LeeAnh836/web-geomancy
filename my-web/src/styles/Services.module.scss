@@ -1,0 +1,64 @@
+.services {
+    background-color: #fdd7aa;
+    padding: 40px 10%;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .serviceList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .service {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  img {
+    width: 320px; /* Ảnh lớn hơn một chút */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .text {
+    max-width: 600px;
+    align-self: start;
+  }
+  
+  .serviceTitle {
+    color: #e76f51;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* 🔹 Responsive cho Mobile */
+  @media (max-width: 768px) {
+    .service {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    img {
+      width: 100%;
+    }
+  
+    .text {
+      max-width: 100%;
+    }
+  }
+  

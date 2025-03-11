@@ -1,0 +1,123 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  
+  /* Phần bọc toàn bộ nội dung */
+  .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #FDD7AA; /* Màu nền tổng thể */
+  }
+  
+  /* Container chứa ảnh nền */
+  .image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    height: 500px; /* Cố định chiều cao */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  /* Ảnh nền */
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+    border-radius: 30px;
+  }
+  
+  /* Overlay tối phần nền */
+  .image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.5); /* Điều chỉnh độ tối */
+  }
+  
+  /* Logo góc trên trái */
+  .logo-top-left {
+    position: absolute;
+    top: 30px;  /* Điều chỉnh thấp hơn để tránh mất */
+    left: 30px;
+    width: 150px;  /* Kích thước nhỏ hơn để hợp với mobile */
+    height: auto;
+    box-shadow: none;
+    z-index: 10;
+  }
+  
+  /* Nội dung chính */
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fdd7aa;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Tiêu đề */
+  .title {
+    margin-bottom: 20px;
+  }
+  
+  /* 🔹 RESPONSIVE CHO MOBILE */
+  @media (max-width: 768px) {
+    .main-content {
+      height: auto;
+      padding: 20px;
+    }
+  
+    .image-container {
+      height: 350px; /* Giảm chiều cao */
+      border-radius: 20px;
+    }
+  
+    .background-image {
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .logo-top-left {
+      width: 100px;  /* Logo nhỏ hơn */
+      top: 50px;
+      left: 30px;
+    }
+  
+    .content {
+      font-size: 1.5rem; /* Nhỏ hơn trên mobile */
+      width: 90%;
+      max-width: 350px;
+    }
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  

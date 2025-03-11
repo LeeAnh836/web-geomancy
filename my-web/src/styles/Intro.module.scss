@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    align-items: center;
+    background-color: #FDD7AA;
+    padding: 50px;
+}
+
+.textSection {
+    flex: 1;
+    padding-right: 20px;
+
+    h1 {
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+}
+
+.imageSection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    img {
+        max-width: 80%;
+        width: 500px;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    img:hover {
+        transform: scale(1.1); /* Zoom to lên 10% */
+    }
+}
