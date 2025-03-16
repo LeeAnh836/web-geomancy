@@ -89,12 +89,19 @@ $mobile-breakpoint: 768px;
 /* === RESPONSIVE CHO MOBILE === */
 @media (max-width: $mobile-breakpoint) {
   .main-content {
-    .logo-top-left{
+    .logo-top-left {
       display: none;
     }
+    
+    .image-container {
+      transform: translateY(30px) scale(0.8); /* Đẩy xuống rồi thu nhỏ */
+      height: 320px; /* Tăng chiều cao một chút nếu cần */
+    }
+
     height: auto;
     padding: 20px;
   }
+
 
   /* === Thu nhỏ toàn bộ container khi ở mobile === */
   .image-container {
