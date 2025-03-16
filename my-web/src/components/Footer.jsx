@@ -1,15 +1,18 @@
+import { useState } from "react";
 import styles from "../styles/Footer.module.scss";
 
 function Footer() {
+  const [showPopup, setShowPopup] = useState(false);
+
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
         {/* Tiêu đề Website */}
-        <h2 className={styles.siteTitle}>Your Site Title</h2>
+        <h2 className={styles.siteTitle}>Điều Hướng</h2>
 
         {/* Cột Explore */}
         <div className={styles.column}>
-          <h3>Explore</h3>
+          <h3>Khám Phá</h3>
           <ul>
             <li><a href="#intro">Giới Thiệu</a></li>
             <li><a href="#contact">Liên Hệ</a></li>
@@ -20,15 +23,35 @@ function Footer() {
 
         {/* Cột Follow Us */}
         <div className={styles.column}>
-          <h3>Follow</h3>
+          <h3>Theo Dõi</h3>
           <ul>
-            <li><a href="#">Email</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">TikTok</a></li>
+            <li>
+              <a href="https://www.facebook.com/le.viet.ngo.880145" target="_blank" rel="noopener noreferrer">
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href="#" onClick={(e) => { e.preventDefault(); setShowPopup(true); }}>
+                Zalo
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">
+                TikTok
+              </a>
+            </li>
           </ul>
         </div>
       </div>
+
+      {/* Popup Zalo */}
+      {showPopup && (
+        <div className={styles.popupOverlay} onClick={() => setShowPopup(false)}>
+          <div className={styles.popupContent} onClick={(e) => e.stopPropagation()}>
+            <img src="/images/qr-zalo.png" alt="QR Zalo" />
+          </div>
+        </div>
+      )}
 
       {/* Dòng bản quyền */}
       <div className={styles.copyright}>

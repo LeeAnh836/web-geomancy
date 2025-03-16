@@ -22,8 +22,9 @@
     font-size: 24px;
     font-weight: bold;
     color: black;
+    text-decoration: none !important;
   }
-  
+
   .nav {
     display: flex;
     align-items: center;
@@ -39,9 +40,14 @@
   .nav ul li {
     display: inline;
   }
+
+  .noUnderline {
+    text-decoration: none !important;
+  }
+  
   
   /* Hiệu ứng hover cho link menu */
-  .nav ul li a {
+  .nav ul li a:not(.no-underline) {
     text-decoration: none;
     color: black;
     font-size: 16px;

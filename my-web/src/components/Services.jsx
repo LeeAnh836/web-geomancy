@@ -6,7 +6,7 @@ function Services() {
       <h2 className={styles.title}>Dịch Vụ</h2>
       <div className={styles.serviceList}>
         <div className={styles.service}>
-          <img src="/images/nha.jpg" alt="Basic Service" />
+          <img src="/images/nha.png" alt="Basic Service" />
           <div className={styles.text}>
             <h3 className={styles.serviceTitle}>Tư Vấn Thiết Kế Phong Thủy, Xây Nhà</h3>
             <p>
@@ -15,7 +15,7 @@ function Services() {
           </div>
         </div>
         <div className={styles.service}>
-          <img src="/images/bantho.jpg" alt="Intermediate Service" />
+          <img src="/images/ban_tho.png" alt="Intermediate Service" />
           <div className={styles.text}>
             <h3 className={styles.serviceTitle}>Tư Vấn Phong Thủy Âm Trạch, Mồ Mả</h3>
             <p>
@@ -24,7 +24,7 @@ function Services() {
           </div>
         </div>
         <div className={styles.service}>
-          <img src="/images/su_nghiep.jpg" alt="Advanced Service" />
+          <img src="/images/nghe_nghiep.png" alt="Advanced Service" />
           <div className={styles.text}>
             <h3 className={styles.serviceTitle}>Tư Vấn Định Hướng Nghề Nghiệp Theo Thời Vận</h3>
             <p>
@@ -33,7 +33,7 @@ function Services() {
           </div>
         </div>
         <div className={styles.service}>
-          <img src="/images/nha.jpg" alt="Basic Service" />
+          <img src="/images/doanh_nghiep.png" alt="Basic Service" />
           <div className={styles.text}>
             <h3 className={styles.serviceTitle}>Tư Vấn Doanh Nghiệp</h3>
             <p>
@@ -42,7 +42,7 @@ function Services() {
           </div>
         </div>
         <div className={styles.service}>
-          <img src="/images/nha.jpg" alt="Basic Service" />
+          <img src="/images/ngay_dep.png" alt="Basic Service" />
           <div className={styles.text}>
             <h3 className={styles.serviceTitle}>Tư Vấn Chọn Ngày Cát Khi Khởi Sự</h3>
             <p>
@@ -51,7 +51,7 @@ function Services() {
           </div>
         </div>
         <div className={styles.service}>
-          <img src="/images/su_nghiep.jpg" alt="Basic Service" />
+          <img src="/images/la_ban.png" alt="Basic Service" />
           <div className={styles.text}>
             <h3 className={styles.serviceTitle}>Tư Vấn Hóa Giải Phong Thủy, Kích Hoạt Tài Lộc</h3>
             <p>

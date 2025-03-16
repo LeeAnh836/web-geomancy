@@ -4,7 +4,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <h1 className={styles.logo}>Phong Thủy Đất Tổ</h1>
+        <h1 className="{styles.logo}"><a href="#" className={styles.noUnderline}>Phong Thủy Đất Tổ</a></h1>
         <nav className={styles.nav}>
           <ul>
             <li><a href="#intro">Giới Thiệu</a></li>

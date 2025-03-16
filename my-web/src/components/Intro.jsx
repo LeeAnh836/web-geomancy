@@ -4,7 +4,7 @@ function Intro() {
     return (
         <div className={styles.container}>
             <div className={styles.textSection}>
-                <h1>About our brand</h1>
+                <h1>Giới Thiệu</h1>
                 <p>
                     Tell people about who you are, your origin, your process, or your inspirations. 
                     You've got this. The way you tell your story online can make all the difference.

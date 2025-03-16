@@ -7,7 +7,7 @@ function Contact() {
 
     return (
         <div className={styles["contact-container"]}>
-            <h1>Contact us</h1>
+            <h1>Liên Hệ</h1>
             <div className={styles["contact-list"]}>
                 {/* Số điện thoại */}
                 <div className={styles["contact-item"]} onClick={() => setPopupContent("Số điện thoại: 0867-091-391")}>
@@ -16,13 +16,13 @@ function Contact() {
                 </div>
 
                 {/* Zalo */}
-                <div className={styles["contact-item"]} onClick={() => setPopupContent(<img src="/zalo-qr.png" alt="QR Zalo" />)}>
+                <div className={styles["contact-item"]} onClick={() => setPopupContent(<img src="images/qr-zalo.png" alt="QR Zalo" />)}>
                     <img src="/images/zalo_logo.png" alt="Zalo" />
                     <p>Zalo</p>
                 </div>
 
                 {/* Facebook */}
-                <div className={styles["contact-item"]} onClick={() => window.open("https://www.facebook.com/your-profile", "_blank")}>
+                <div className={styles["contact-item"]} onClick={() => window.open("https://www.facebook.com/le.viet.ngo.880145", "_blank")}>
                     <img src="/images/facebook_logo.png" alt="Facebook" />
                     <p>Facebook</p>
                 </div>

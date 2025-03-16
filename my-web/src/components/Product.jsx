@@ -17,7 +17,7 @@ function Product() {
 
   return (
     <div className={styles.productSection}>
-      <h2 className={styles.title}>Danh sách sản phẩm</h2>
+      <h1 className={styles.title}>Danh sách sản phẩm</h1>
       <div className={styles.productList}>
         {visibleProducts.map((product) => (
           <div key={product.id} className={styles.productCard}>
