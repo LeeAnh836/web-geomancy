@@ -36,3 +36,9 @@
         transform: scale(1.1); /* Zoom to lên 10% */
     }
 }
+
+@media (max-width: 768px) {
+    .imageSection {
+        display: none;
+    }
+}

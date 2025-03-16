@@ -89,6 +89,9 @@ $mobile-breakpoint: 768px;
 /* === RESPONSIVE CHO MOBILE === */
 @media (max-width: $mobile-breakpoint) {
   .main-content {
+    .logo-top-left{
+      display: none;
+    }
     height: auto;
     padding: 20px;
   }
